@@ -1,3 +1,4 @@
+import 'package:firebase_complete/core/theme/theme.dart';
 import 'package:firebase_complete/features/auth/view/pages/signup_page.dart';
 import 'package:firebase_complete/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -20,12 +21,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        theme: ThemeData(
-          // tested with just a hot reload.
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
+        theme: AppTheme.darkThemeMode,
         home: const SignupPage());
   }
 }
