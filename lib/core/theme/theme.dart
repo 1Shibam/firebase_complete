@@ -24,4 +24,21 @@ class AppTheme {
         foregroundColor: Colors.transparent,
         backgroundColor: Colors.transparent,
       ));
+
+  static final lightThemeMode = ThemeData.light().copyWith(
+    scaffoldBackgroundColor: Pallete.primaryLightColor,
+    inputDecorationTheme: InputDecorationTheme(
+      labelStyle: AppTextStyles.normal(color: Pallete.subtitleLightColor),
+      floatingLabelStyle: AppTextStyles.normal(color: Pallete.buttonColor),
+      contentPadding: const EdgeInsets.all(16),
+      enabledBorder: _border(Pallete.buttonDisabledLightColor, 8),
+      focusedBorder: _border(Pallete.buttonColor, 24),
+    ),
+    appBarTheme: const AppBarTheme(
+      shadowColor: Colors.transparent,
+      surfaceTintColor: Colors.transparent,
+      foregroundColor: Colors.transparent,
+      backgroundColor: Colors.transparent,
+    ),
+  );
 }

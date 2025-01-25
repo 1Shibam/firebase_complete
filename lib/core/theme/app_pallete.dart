@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Pallete {
+  static const Color subtitleLightColor = Colors.black54;
+  static const Color buttonDisabledLightColor = Colors.grey;
+
   // Primary colors
   static const Color primaryColor = Color(0xFF1DB954); // Spotify Green
   static const Color primaryDarkColor =
