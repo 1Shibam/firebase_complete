@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364620905994",
+    "project_id": "fir-learning-b3b4a",
+    "storage_bucket": "fir-learning-b3b4a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364620905994:android:db5e9f74a77b576d2429f3",
+        "android_client_info": {
+          "package_name": "com.shibamfirebase.firebase_complete"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsgKXc90GZjCKsiOcDNMmFUHGer5Ayam0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
