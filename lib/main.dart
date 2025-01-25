@@ -2,13 +2,15 @@ import 'package:firebase_complete/features/auth/view/pages/signup_page.dart';
 import 'package:firebase_complete/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() async{
-  WidgetsFlutterBinding.ensureInitialized(); // Ensure that Firebase is initialized
+void main() async {
+  WidgetsFlutterBinding
+      .ensureInitialized(); // Ensure that Firebase is initialized
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-);
-  runApp(const MyApp());
+  );
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -18,14 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const SignupPage()
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          // tested with just a hot reload.
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const SignupPage());
   }
 }
-
